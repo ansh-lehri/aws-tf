@@ -18,7 +18,7 @@ variable "ec2-instances" {
 
 variable "dir_path_to_login_keys" {
     type = string
-    default = "/Users/ansh.lehri/desktop/login-keys"
+    default = ""
 }
 
 variable "aws_access_key_id" {

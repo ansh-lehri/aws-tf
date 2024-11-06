@@ -289,7 +289,7 @@ eks_clusters = [
     {
         control_plane = {
             name = "rattle-eks"
-            role_arn = "arn:aws:iam::851725241491:role/rattle-cluster"
+            role_arn = ""
             vpc_config = {
                 cluster_endpoint_access = "private"
                 security_group_names = ["rattle-eks-sg"]
@@ -307,7 +307,7 @@ eks_clusters = [
         node_groups = [
             {
                 name = "rattle-ng-1"
-                role_arn = "arn:aws:iam::851725241491:role/rattle-ng"
+                role_arn = ""
                 scaling_config = {
                     max_size = 2
                     min_size = 1
@@ -338,10 +338,10 @@ eks_clusters = [
 bastion_cluster_connect = {
     create_connect = true
     bastion_name = "rattle-bastion"
-    bastion_user = "ubuntu"
+    bastion_user = ""
     security_group_name_to_open_ports = "rattle-eks-sg"
     login-key-name = "test-rattle-1"
-    login-key-path = "/Users/ansh.lehri/desktop/login-keys"
+    login-key-path = ""
     clusters = [
         {
             cluster_name = "rattle-eks"
